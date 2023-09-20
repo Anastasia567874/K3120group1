@@ -1,4 +1,4 @@
-
+import random
 
 def f_3n(n):
     a = 0
@@ -11,7 +11,8 @@ def f_3n(n):
 
 
 def f_nlongn(n):
-    a = [int(x) for x in range(n, 0, -1)]
+    a = [random.randint(1, 100) for x in range(n)]
+    print(a)
     a.sort()
 
 
@@ -54,3 +55,4 @@ def f_3nlogn(n):
     binary_search(a, x1)
     binary_search(a, x2)
     binary_search(a, x3)
+
